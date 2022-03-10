@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: api
-        image: stratcastor/api:latest
+        image: extetris/lbg-api:ver1
         ports:
         - containerPort: 4000
