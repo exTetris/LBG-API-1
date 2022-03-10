@@ -3,12 +3,12 @@ pipeline {
 	stages{
 		stage('Build Image'){
 			steps{
-			sh 'docker build -t extetris/api:build-$BUILD_NUMBER .'
+			sh 'docker build -t extetris/lbg-api:build-$BUILD_NUMBER .'
 			}
 		}
 		stage('Push to Dockerhub'){
 			steps{
-            sh 'docker push extetris/api:build-$BUILD_NUMBER'
+            sh 'docker push extetris/lbg-api:build-$BUILD_NUMBER'
 			}
 		}
 		stage('Reapply '){
