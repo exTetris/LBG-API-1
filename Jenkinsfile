@@ -22,7 +22,7 @@ pipeline {
 		}
         stage('Cleanup'){
 			steps{
-            sh 'docker rmi gcr.io/lbg-210222/api-piers:latest'
+            sh 'docker rmi gcr.io/lbg-210222/extetris/lbg-api:latest'
 			sh 'docker rmi gcr.io/lbg-210222/extetris/lbg-api:build-$BUILD_NUMBER'
 			}
 		}
